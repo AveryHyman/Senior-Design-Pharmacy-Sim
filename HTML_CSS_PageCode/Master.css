@@ -1,3 +1,5 @@
+/* The following code is applied to every page */
+/************************************************************************************/
 body {
     font-family: Helvetica Neue, Arial, Helvetica, sans-serif, Arial, sans-serif;
     font-size: 14px;
@@ -36,8 +38,14 @@ body {
     font-size: 1.2vw;
     margin-top: 1%;
 }
+/************************************************************************************/
 
-#mainArea {
+
+
+/* The following code is specific to the Log In page */
+/************************************************************************************/
+
+#logInMainArea {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
@@ -62,9 +70,6 @@ body {
     padding-bottom: 1%;
 }
 
-#projectInfo {
-
-}
 
 #logInBox {
     border: 1px solid grey;
@@ -84,8 +89,9 @@ body {
     border-radius: 5px;
 }
 
-.username-input {
+#username-input {
     padding-left: 10px;
+    border: none;
 }
 
 #username img {
@@ -104,10 +110,12 @@ body {
     display: inline-flex;
     border: 1px solid #cccccc;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
-.password-input {
+#password-input {
     padding-left: 10px;
+    border: 0px;
 }
 
 #password img {
@@ -165,3 +173,132 @@ body {
     margin-bottom: 1px;
     font-size: 18px;
 }
+/************************************************************************************/
+
+
+
+/* The following code is specific to the Landing page */
+/************************************************************************************/
+#landingMainArea {
+    margin: 1%;
+    padding-top: 1%;
+    align-items: flex-end;
+}
+
+#subheading {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 1%;
+    justify-content: space-between;
+}
+
+#landingPageType {
+    font-size: 16px;
+}
+
+#logoutButton {
+    border: #eeeeee; 
+    padding: 8px; 
+    border-radius: 5px;
+}
+
+/*#logoutButton:active {
+    border: 1px solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#logoutButton:focus {
+    outline: none;
+}*/
+
+#landingPageNavigation {
+    display: flex;
+    justify-content: center;
+}
+
+#statistics {
+    display: inline-flex;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    padding: 1%;
+}
+
+#statistics img {
+    filter: opacity(30%);
+    position: relative;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20vw;
+
+}
+
+#statisticsButton {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background: none;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 24vw;
+    height: 24vw;
+}
+
+#statisticsButton:active {
+    border: 1px solid #66afe9;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 5px #66afe9;
+}
+
+#statisticsButton:focus {
+    outline: none;
+}
+
+#takeQuiz {
+    display: inline-flex;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    padding: 1%;
+}
+
+#takeQuiz img {
+    filter: opacity(30%);
+    position: relative;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+#takeQuizButton {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background: none;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 24vw;
+    height: 24vw;
+}
+
+#takeQuizButton:active {
+    border: 1px solid #66afe9;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 5px #66afe9;
+}
+
+#takeQuizButton:focus {
+    outline: none;
+}
+
+
