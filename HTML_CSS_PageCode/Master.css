@@ -400,4 +400,20 @@ body {
 #enterPathButton:focus {
     outline: none;
 }
+/************************************************************************************/
+
+
+
+
+/* The following code is specific to the Statistics page */
+/************************************************************************************/
+#statisticsMainArea {
+    margin: 1%;
+    padding-top: 1%;
+    align-items: flex-end;
+}
+
+#statisticsPageTitle {
+    font-size: 20px;
+}
 
