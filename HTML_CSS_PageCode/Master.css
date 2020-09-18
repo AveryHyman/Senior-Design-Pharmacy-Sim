@@ -177,6 +177,63 @@ body {
 
 
 
+
+/*The following code is for the subheading */
+/************************************************************************************/
+#subheading {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#buttonNavPanel {
+    display: inline-flex;
+    justify-content: flex-end;
+    /*margin-left: auto;*/
+    width: 50%;
+}
+
+#logoutButton {
+    border: #eeeeee; 
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+#logoutButton:active {
+    border: solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#logoutButton:focus {
+    outline: none;
+}
+
+#homeButton {
+    border: #eeeeee; 
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+#homeButton:active {
+    border: solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#homeButton:focus {
+    outline: none;
+}
+
+
+
 /* The following code is specific to the Landing page */
 /************************************************************************************/
 #landingMainArea {
@@ -185,33 +242,9 @@ body {
     align-items: flex-end;
 }
 
-#subheading {
-    display: flex;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 1%;
-    justify-content: space-between;
-}
-
 #landingPageType {
-    font-size: 16px;
+    font-size: 20px;
 }
-
-#logoutButton {
-    border: #eeeeee; 
-    padding: 8px; 
-    border-radius: 5px;
-}
-
-/*#logoutButton:active {
-    border: 1px solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#logoutButton:focus {
-    outline: none;
-}*/
 
 #landingPageNavigation {
     display: flex;
@@ -300,5 +333,71 @@ body {
 #takeQuizButton:focus {
     outline: none;
 }
+/************************************************************************************/
 
+
+
+
+/* The following code is specific to the Path page */
+/************************************************************************************/
+#pathMainArea {
+    margin: 1%;
+    padding-top: 1%;
+    align-items: flex-end;
+}
+
+#pathPageTitle {
+    font-size: 20px;
+}
+
+#pathPageNavigation {
+    display: flex;
+    justify-content: center;
+}
+
+#bluePath {
+    text-align: center;
+    background-color: #03244d;
+    border-radius: 10px;
+    color: white;
+    padding: 2%;
+    margin: 5%;
+}
+
+#pathTitle {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    padding-bottom: 1%;
+}
+
+#pathInfo {
+    margin-bottom: 4%;
+}
+
+#orangePath {
+    text-align: center;
+    background-color: #dd550c;
+    border-radius: 10px;
+    color: white;
+    padding: 2%;
+    margin: 5%;
+}
+
+#enterPathButton {
+    border: #eeeeee; 
+    border-radius: 5px;
+    height: 30px;
+}
+
+#enterPathButton:active {
+    border: 1px solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#enterPathButton:focus {
+    outline: none;
+}
 
