@@ -231,7 +231,6 @@ body {
 #buttonNavPanel {
     display: inline-flex;
     justify-content: flex-end;
-    width: 50%;
 }
 
 #logoutButton {
@@ -480,7 +479,7 @@ body {
 
 #orangeCasesPageNavigation {
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -616,7 +615,7 @@ body {
 
 #blueCasesPageNavigation {
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -685,4 +684,144 @@ body {
     border-radius: 5px;
     padding: 2%;
     margin: 1%;
+}
+
+
+
+
+
+/* The following code is specific to the Blue Cases page */
+/************************************************************************************/
+#questionMainArea {
+    margin: 1%;
+    padding-top: 1%;
+    align-items: flex-end;
+}
+
+#timer {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+    font-size: 12px;
+}
+
+#questionPageNavigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#caseDescriptionPanel {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+    text-align: justify;
+    width: 50%;
+}
+
+#caseDescriptionIdentifier {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1%;
+    font-size: 16px;
+}
+
+#questionAndAnswerPanel {
+    /*border: 1px solid black;*/
+    margin: 2%;
+    width: 50%;
+}
+
+#questionSection {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+#questionNumber {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1%;
+    font-size: 16px;
+}
+
+#answersSection {
+    padding: 2% 0% 0% 0%;
+    margin: 0%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 1px solid grey;
+}
+
+#answerButton {
+    border-radius: 5px;
+    border: none;
+    background: rgb(97,166,249);
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+}
+
+#answerButton:active {
+
+}
+
+#answerButton:focus {
+    outline: none;
+    border-radius: 5px;
+    background: rgb(242,167,126)
+}
+
+
+#returnToCaseDescriptionButton {
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+#returnToCaseDescriptionButton:active {
+    border: solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#returnToCaseDescriptionButton:focus {
+    outline: none;
+}
+
+#pauseQuizButton {
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+#pauseQuizButton:active {
+    border: solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#pauseQuizButton:focus {
+    outline: none;
+}
+
+#nextQuestionButton {
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+#nextQuestionButton:active {
+    border: solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#nextQuestionButton:focus {
+    outline: none;
 }
