@@ -390,6 +390,7 @@ body {
 #pathPageNavigation {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #bluePath {
@@ -399,6 +400,7 @@ body {
     color: white;
     padding: 2%;
     margin: 5%;
+    max-width: 400px;
 }
 
 #pathTitle {
@@ -420,6 +422,7 @@ body {
     color: white;
     padding: 2%;
     margin: 5%;
+    max-width: 400px;
 }
 
 #enterPathButtonDiv {
@@ -487,7 +490,7 @@ body {
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin: 3%;
     background-image: linear-gradient(#dd550c 55%, white 45%);
 }
 
@@ -580,6 +583,24 @@ body {
     outline: none;
 }
 
+#startCaseButton {
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+#startCaseButton:active {
+    border: solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 1px #66afe9;
+}
+
+#startCaseButton:focus {
+    outline: none;
+}
+
 
 /* The following code is specific to the Blue Cases page */
 /************************************************************************************/
@@ -637,4 +658,31 @@ body {
 
 #blueCardButton:focus {
     outline: none;
+}
+
+
+
+
+/* The following code is specific to the Blue Cases page */
+/************************************************************************************/
+#caseDescriptionMainArea {
+    margin: 1%;
+    padding-top: 1%;
+    align-items: flex-end;
+}
+
+#mainSubheading {
+    display: flex;
+    flex-direction: column;
+}
+
+#caseTitle {
+    font-size: 20px;
+}
+
+#caseDescription {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 1%;
 }
