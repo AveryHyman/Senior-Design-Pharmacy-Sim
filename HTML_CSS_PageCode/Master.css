@@ -9,6 +9,7 @@ body {
     margin: 0;
 }
 
+/*Banner Code*/
 #topBanner {
     position: relative;
     background-color: #03244d;
@@ -38,18 +39,37 @@ body {
     font-size: 1.2vw;
     margin-top: 1%;
 }
+
+/*Button Style*/
+.greyNavigationButtons {
+    border: 1px solid #eeeeee; 
+    padding: 8px; 
+    border-radius: 5px;
+}
+
+.greyNavigationButtons:active {
+    border: 1px solid #66afe9;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 2px #66afe9;
+}
+
+.greyNavigationButtons:focus {
+    outline: none;
+}
 /************************************************************************************/
+
 
 
 
 /* The following code is specific to the Log In page */
 /************************************************************************************/
-
 #logInMainArea {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 5%;
 }
 
 #projectDescription {
@@ -72,113 +92,96 @@ body {
 }
 
 
-#logInBox {
-    border: 1px solid grey;
-    border-radius: 10px;
-    width: 250px;
-    float: right;
-    text-align: center;
-    padding: 3%;
-    margin: 2%;
-}
+    /*This code is for a log-in box. It was removed because we got CAS authitication
+    #logInBox {
+        border: 1px solid grey;
+        border-radius: 10px;
+        width: 250px;
+        float: right;
+        text-align: center;
+        padding: 3%;
+        margin: 2%;
+    }
 
-#username {
-    width: 90%;
-    position: relative;
-    display: inline-flex;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
+    #username {
+        width: 90%;
+        position: relative;
+        display: inline-flex;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
 
-#username-input {
-    padding-left: 10px;
-    border: none;
-    width: 100%;
-    outline: none;
-    border-radius: 0px 5px 5px 0px;
-}
+    #username-input {
+        padding-left: 10px;
+        border: none;
+        width: 100%;
+        outline: none;
+        border-radius: 0px 5px 5px 0px;
+    }
 
-#username-input:focus {
-    border: solid #66afe9;
-    border-radius: 0px 5px 5px 0px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
+    #username-input:focus {
+        border: solid #66afe9;
+        border-radius: 0px 5px 5px 0px;
+        outline: none;
+        box-shadow: 0 0 1px #66afe9;
+    }
 
-#username img {
-    position: relative;
-    height: 20px;
-    background: #eeeeee;
-    padding: 5px;
-    border-radius: 3px 0px 0px 3px;
-    color: #555555;
-}
+    #username img {
+        position: relative;
+        height: 20px;
+        background: #eeeeee;
+        padding: 5px;
+        border-radius: 3px 0px 0px 3px;
+        color: #555555;
+    }
 
 
-#password {
-    width: 90%;
-    position: relative;
-    display: inline-flex;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    margin-top: 5px;
-}
+    #password {
+        width: 90%;
+        position: relative;
+        display: inline-flex;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
 
-#password-input {
-    padding-left: 10px;
-    border: none;
-    width: 100%;
-    outline: none;
-    border-radius: 0px 5px 5px 0px;
-}
+    #password-input {
+        padding-left: 10px;
+        border: none;
+        width: 100%;
+        outline: none;
+        border-radius: 0px 5px 5px 0px;
+    }
 
-#password-input:focus {
-    border: solid #66afe9;
-    border-radius: 0px 5px 5px 0px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
+    #password-input:focus {
+        border: solid #66afe9;
+        border-radius: 0px 5px 5px 0px;
+        outline: none;
+        box-shadow: 0 0 1px #66afe9;
+    }
 
-#password img {
-    position: relative;
-    height: 20px;
-    background: #eeeeee;
-    padding: 5px;
-    border-radius: 3px 0px 0px 3px;
-    color: #555555;
-}
+    #password img {
+        position: relative;
+        height: 20px;
+        background: #eeeeee;
+        padding: 5px;
+        border-radius: 3px 0px 0px 3px;
+        color: #555555;
+    }
 
-#logInButton {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+    #logInButtonDiv {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
-#logInButtonStyle {
-    border: #eeeeee; 
-    padding: 8px; 
-    border-radius: 5px;
-}
+    #signUpLink {
+        float: left;
+    }
 
-#logInButtonStyle:active {
-    border: 1px solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#logInButtonStyle:focus {
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-#signUpLink {
-    float: left;
-}
-
-#forgotPassword {
-    text-align: right;
-}
+    #forgotPassword {
+        text-align: right;
+    }
+    */
 
 #bottomBanner {
     background-color: #03244d;
@@ -218,9 +221,10 @@ body {
 
 
 
+
 /*The following code is for the subheading */
 /************************************************************************************/
-#subheading {
+#subheader {
     display: flex;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 1%;
@@ -228,61 +232,32 @@ body {
     align-items: flex-end;
 }
 
+.subheaderTitle {
+    font-size: 20px;
+}
+
 #buttonNavPanel {
     display: inline-flex;
     justify-content: flex-end;
 }
 
-#logoutButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
-}
-
-#logoutButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#logoutButton:focus {
-    outline: none;
-}
-
 #homeButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
     margin-right: 10px;
 }
 
-#homeButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
+.mainArea {
+    margin: 1%;
+    padding-top: 1%;
 }
+/************************************************************************************/
 
-#homeButton:focus {
-    outline: none;
-}
+
 
 
 
 /* The following code is specific to the Landing page */
 /************************************************************************************/
-#landingMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
-
-#landingPageType {
-    font-size: 20px;
-}
-
-#landingPageNavigation {
+#homePageNavigation {
     display: flex;
     justify-content: center;
 }
@@ -294,35 +269,38 @@ body {
     align-items: center;
     justify-content: center;
     margin: 5%;
-    padding: 1%;
+    background-color: #03244d;
 }
 
 #statistics img {
     filter: opacity(30%);
-    position: relative;
-    z-index: -1;
-    padding: 10px;
+    position: absolute;
     border-radius: 10px;
-    width: 20vw;
-
+    width: 17vw;
+    padding-top: 4%;
+    filter: invert(31%) sepia(99%) saturate(2487%) hue-rotate(10deg) brightness(99%) contrast(91%);
 }
 
 #statisticsButton {
     border: 1px solid #cccccc;
     border-radius: 10px;
     background: none;
-    position: absolute;
+    position: relative;
     font-weight: bold;
     font-size: 3vw;
     width: 24vw;
     height: 24vw;
+    color: white;
+    font-size: min(30px, 3vw);
+    padding-bottom: 65%;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #statisticsButton:active {
-    border: 1px solid #66afe9;
+    border: 2px solid #66afe9;
     border-radius: 10px;
     outline: none;
-    box-shadow: 0 0 5px #66afe9;
+    box-shadow: 0 0 10px #66afe9;
 }
 
 #statisticsButton:focus {
@@ -336,34 +314,39 @@ body {
     align-items: center;
     justify-content: center;
     margin: 5%;
-    padding: 1%;
+    background-color: #03244d;
 }
 
 #takeQuiz img {
     filter: opacity(30%);
-    position: relative;
-    z-index: -1;
+    position: absolute;
     padding: 10px;
     border-radius: 10px;
-    width: 20vw;
+    width: 15vw;
+    padding-top: 6%;
+    filter: invert(31%) sepia(99%) saturate(2487%) hue-rotate(10deg) brightness(99%) contrast(91%);
 }
 
 #takeQuizButton {
     border: 1px solid #cccccc;
     border-radius: 10px;
     background: none;
-    position: absolute;
+    position: relative;
     font-weight: bold;
     font-size: 3vw;
     width: 24vw;
     height: 24vw;
+    color: white;
+    font-size: min(30px, 3vw);
+    padding-bottom: 65%;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #takeQuizButton:active {
-    border: 1px solid #66afe9;
+    border: 2px solid #66afe9;
     border-radius: 10px;
     outline: none;
-    box-shadow: 0 0 5px #66afe9;
+    box-shadow: 0 0 10px #66afe9;
 }
 
 #takeQuizButton:focus {
@@ -374,32 +357,31 @@ body {
 
 
 
+
+
 /* The following code is specific to the Path page */
 /************************************************************************************/
-#pathMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
-
-#pathPageTitle {
-    font-size: 20px;
-}
-
 #pathPageNavigation {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#bluePath {
+.pathDiv {
     text-align: justify;
-    background-color: #03244d;
     border-radius: 10px;
     color: white;
     padding: 2%;
     margin: 5%;
     max-width: 400px;
+}
+
+#bluePath {
+    background-color: #03244d;
+}
+
+#orangePath {
+    background-color: #dd550c;
 }
 
 #pathTitle {
@@ -414,91 +396,48 @@ body {
     margin-bottom: 4%;
 }
 
-#orangePath {
-    text-align: justify;
-    background-color: #dd550c;
-    border-radius: 10px;
-    color: white;
-    padding: 2%;
-    margin: 5%;
-    max-width: 400px;
-}
-
 #enterPathButtonDiv {
     text-align: center;
 }
-
-#enterPathButton {
-    border: #eeeeee; 
-    border-radius: 5px;
-    height: 30px;
-}
-
-#enterPathButton:active {
-    border: 1px solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#enterPathButton:focus {
-    outline: none;
-}
 /************************************************************************************/
+
+
 
 
 
 
 /* The following code is specific to the Statistics page */
 /************************************************************************************/
-#statisticsMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
 
-#statisticsPageTitle {
-    font-size: 20px;
-}
 /************************************************************************************/
 
 
 
 
-/* The following code is specific to the Orange Cases page */
+
+
+/* The following code is specific to the Cases page */
 /************************************************************************************/
-#orangeCasesMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
-
-#orangeCasesPageTitle {
-    font-size: 20px;
-}
-
-#orangeCasesPageNavigation {
+#casesPageNavigation {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#orangeCard {
+.caseCard {
     display: inline-flex;
     border: none;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
     margin: 3%;
-    background-image: linear-gradient(#dd550c 55%, white 45%);
+    background-image: linear-gradient(grey 55%, white 45%);
 }
 
-#orangeCardButton {
+.caseCardButton {
     border: 1px solid #cccccc;
     border-radius: 5px;
     position: relative;
-    font-weight: bold;
-    font-size: 3vw;
     width: 30vw;
     height: 30vw;
     max-width: 250px;
@@ -508,22 +447,20 @@ body {
     padding-top: 55%;
     text-align: left;
     font-weight: normal;
-    font-size: 16px;
     line-height: 2;
+    font-size: min(16px, 2vw);
 }
 
-#orangeCardButton:active {
+.caseCardButton:active {
     border: 2px solid #66afe9;
     border-radius: 5px;
     outline: none;
     box-shadow: 0 0 6px #66afe9;
 }
 
-#orangeCardButton:focus {
+.caseCardButton:focus {
     outline: none;
 }
-/************************************************************************************/
-
 
 #addCaseCardButtonDiv {
     display: inline-flex;
@@ -559,6 +496,31 @@ body {
 }
 
 
+    /*This code is to display separate blue/orange cases pages which are just examples*/
+    #orangeCaseCard {
+        background-image: linear-gradient(#dd550c 55%, white 45%);
+    }
+
+    #blueCaseCard {
+        background-image: linear-gradient(#03244d 55%, white 45%);
+    }
+
+    #orangeCaseCardButton {
+        font-size: 16px;
+    }
+
+    #blueCaseCardButton {
+        font-size: 14px;
+    }
+/************************************************************************************/
+
+
+
+
+
+
+/* The following code is specific to the FooterNavigation */
+/************************************************************************************/
 #footerNavigation {
     display: flex;
     justify-content: center;
@@ -566,117 +528,25 @@ body {
 }
 
 #returnToPathsButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
-}
-
-#returnToPathsButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#returnToPathsButton:focus {
-    outline: none;
+    margin-right: 5px;
 }
 
 #startCaseButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
-    margin-left: 10px;
+    margin-left: 5px;
 }
-
-#startCaseButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#startCaseButton:focus {
-    outline: none;
-}
-
-
-/* The following code is specific to the Blue Cases page */
 /************************************************************************************/
-#blueCasesMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
-
-#blueCasesPageTitle {
-    font-size: 20px;
-}
-
-#blueCasesPageNavigation {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#blueCard {
-    display: inline-flex;
-    border: none;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    margin: 3%;
-    background-image: linear-gradient(#03244d 55%, white 45%);
-}
-
-#blueCardButton {
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    position: relative;
-    font-weight: bold;
-    font-size: 3vw;
-    width: 30vw;
-    height: 30vw;
-    max-width: 250px;
-    max-height: 250px;
-    background: none;
-    box-shadow: 5px 5px 5px grey;
-    padding-top: 55%;
-    text-align: left;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
-}
-
-#blueCardButton:active {
-    border: 2px solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 6px #66afe9;
-}
-
-#blueCardButton:focus {
-    outline: none;
-}
 
 
 
 
-/* The following code is specific to the Blue Cases page */
+
+
+
+/* The following code is specific to the Case Description page */
 /************************************************************************************/
-#caseDescriptionMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
-
-#mainSubheading {
+#mainSubheader {
     display: flex;
     flex-direction: column;
-}
-
-#caseTitle {
-    font-size: 20px;
 }
 
 #caseDescription {
@@ -685,19 +555,15 @@ body {
     padding: 2%;
     margin: 1%;
 }
-
-
-
-
-
-/* The following code is specific to the Blue Cases page */
 /************************************************************************************/
-#questionMainArea {
-    margin: 1%;
-    padding-top: 1%;
-    align-items: flex-end;
-}
 
+
+
+
+
+
+/* The following code is specific to the Question pages */
+/************************************************************************************/
 #timer {
     border: 1px solid black;
     border-radius: 5px;
@@ -733,7 +599,7 @@ body {
 }
 
 #questionSection {
-    border: 1px solid grey;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 2%;
     margin-bottom: 4%;
@@ -774,54 +640,16 @@ body {
     background: rgb(242,167,126)
 }
 
+#questionFooterNavigation {
+    display: flex;
+    justify-content: flex-end;
+}
 
 #returnToCaseDescriptionButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
-}
-
-#returnToCaseDescriptionButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#returnToCaseDescriptionButton:focus {
-    outline: none;
+    margin-right: 10px;
 }
 
 #pauseQuizButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
+    margin-right: 10px;
 }
-
-#pauseQuizButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#pauseQuizButton:focus {
-    outline: none;
-}
-
-#nextQuestionButton {
-    border-radius: 5px;
-    height: 30px;
-    border: 1px solid white;
-}
-
-#nextQuestionButton:active {
-    border: solid #66afe9;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 0 1px #66afe9;
-}
-
-#nextQuestionButton:focus {
-    outline: none;
-}
+/************************************************************************************/

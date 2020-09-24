@@ -14,56 +14,64 @@
                     <img class="logo-image" src="https://cdn.auburn.edu/2016/_assets/images/auburn-logo-horizontal.svg" alt="Auburn University logo" />
             </div>
             <div id="websiteName">
-                <text>Pharmacy Simulation</text>
+                Pharmacy Simulation
             </div>
             <div id="department">
-                <text>Harrison School of Pharmacy</text>
+                Harrison School of Pharmacy
             </div>
         </div>
-        <div id="questionMainArea">
-            <div id="subheading">
-                <div id="mainSubheading">
-                    <div id="caseTitle">
-                        <text>Case Title</text>
+        <div id="questionMainArea" class="mainArea">
+            <div id="subheader">
+                <div id="mainSubheader">
+                    <div id="caseTitle" class="subheaderTitle">
+                        %Case Title%
                     </div>
                     <div id="expectedTime">
-                        <text>Expected Completion Time: 30 minutes</text>
+                        Expected Completion Time: %30 minutes%
                     </div>
                 </div>
                 <div id="timer">
-                    <text>TIME ELAPSED<br></text>
-                    <text>00:00.00</text>
+                    TIME ELAPSED<br>
+                    %00:00.00%
                 </div>
                 <div id="buttonNavPanel">
-                  <button id="homeButton" type="button">HOME</button>
-                  <button id="logoutButton"type="button">LOGOUT</button>
+                  <button id="homeButton" type="button" class="greyNavigationButtons">HOME</button>
+                  <button id="logoutButton"type="button" class="greyNavigationButtons">LOGOUT</button>
                 </div>
             </div>
             <div id="questionPageNavigation">
                 <div id="caseDescriptionPanel">
                     <div id="caseDescriptionIdentifier">
-                        <text>Case Description</text>
+                        Case Description
                     </div>
-                    <text>Danny is a 58 yo AAM who presents to a free clinic to establish care. He lost his job and insurance 2 weeks ago and is concerned about how he will afford his medications. He reports he is currently out of testing supplies for his diabetes but denies any symptoms related to his health problems, including hypoglycemia. He reports he is usually adherent to all of his medications but ran out of his atorvastatin and carvedilol medications 2 weeks ago and has been unable to refill them....</text>
+                    %Danny is a 58 yo AAM who presents to a free clinic to establish care. He lost his job and insurance 2 weeks ago and is concerned about how he will afford his medications. He reports he is currently out of testing supplies for his diabetes but denies any symptoms related to his health problems, including hypoglycemia. He reports he is usually adherent to all of his medications but ran out of his atorvastatin and carvedilol medications 2 weeks ago and has been unable to refill them....%
                 </div>
                 <div id="questionAndAnswerPanel">
                     <div id="questionSection">
                         <div id="questionNumber">
-                            <text>Question Number 1</text>
+                            Question %1%
                     </div>
-                        <text>What would be the best plan regarding Danny’s diabetes management given his current situation?</text>
+                        %What would be the best plan regarding Danny’s diabetes management given his current situation?%
                     </div>
                     <div id="answersSection">
-                        <button id="answerButton" type="button">Continue current medications and focus on lifestyle modifications</button>
-                        <button id="answerButton" type="button">Start glimepiride 2 mg PO daily</button>
-                        <button id="answerButton" type="button">Discontinue pioglitazone and order Farxiga (dapagliflozin) 5 mg PO daily through patient assistance program </button>
+                        <button id="answerButton" type="button">
+                            %Continue current medications and focus on lifestyle modifications%
+                        </button>
+
+                        <button id="answerButton" type="button">
+                            %Start glimepiride 2 mg PO daily%
+                        </button>
+                        
+                        <button id="answerButton" type="button">
+                            %Discontinue pioglitazone and order Farxiga (dapagliflozin) 5 mg PO daily through patient assistance program%
+                        </button>
                     </div>
                 </div>
             </div>
             <div id="questionFooterNavigation">
-                <button id="returnToCaseDescriptionButton" type="button">RETURN TO CASE DESCRIPTION</button>
-                <button id="pauseQuizButton" type="button">PAUSE QUIZ</button>
-                <button id="nextQuestionButton" type="button">NEXT QUESTION</button>
+                <button id="returnToCaseDescriptionButton" type="button" class="greyNavigationButtons">RETURN TO CASE DESCRIPTION</button>
+                <button id="pauseQuizButton" type="button" class="greyNavigationButtons">PAUSE QUIZ</button>
+                <button id="nextQuestionButton" type="button" class="greyNavigationButtons">NEXT QUESTION</button>
             </div>
         </div>
     </body>
