@@ -428,10 +428,10 @@ body {
     display: inline-flex;
     border: none;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
     margin: 3%;
-    background-image: linear-gradient(grey 55%, white 45%);
+    background-image: linear-gradient(grey 50%, white 40%);
 }
 
 .caseCardButton {
@@ -444,11 +444,13 @@ body {
     max-height: 250px;
     background: none;
     box-shadow: 5px 5px 5px grey;
-    padding-top: 55%;
     text-align: left;
     font-weight: normal;
     line-height: 2;
     font-size: min(16px, 2vw);
+    display: flex;
+    justify-content: left;
+    padding-top: 50%;
 }
 
 .caseCardButton:active {
@@ -460,6 +462,44 @@ body {
 
 .caseCardButton:focus {
     outline: none;
+}
+
+#editCaseButton {
+    position: absolute;
+    margin-left: min(160px, 22vw);
+    margin-top: min(200px,25vw);
+    background: none;
+    border: none;
+    padding: 0.5%;
+}
+
+#editCaseButton img {
+    height: min(25px, 2vw);
+}
+
+.adminCaseButton:hover {
+    filter: invert(72%) sepia(27%) saturate(2861%) hue-rotate(178deg) brightness(98%) contrast(87%);
+}
+
+.adminCaseButton:active {
+
+}
+
+.adminCaseButton:focus {
+    outline: none;
+}
+
+#deleteCaseButton {
+    position: absolute;
+    margin-left: min(205px, 26vw);
+    margin-top: min(200px,25vw);
+    background: none;
+    border: none;
+    padding: 0.5%;
+}
+
+#deleteCaseButton img {
+    height: min(25px, 2vw);
 }
 
 #addCaseCardButtonDiv {
